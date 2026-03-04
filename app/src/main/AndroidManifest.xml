@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.kinderkingdom">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.KinderKingdom">
+        <activity
+            android:name=".academicinformation2"
+            android:exported="false" />
+        <activity
+            android:name=".attendancendabsenceofstudents2"
+            android:exported="false" />
+        <activity
+            android:name=".feedbackandnotesofstudents"
+            android:exported="false" />
+        <activity
+            android:name=".bussupervisorinformation"
+            android:exported="false" />
+        <activity
+            android:name=".attendanceandabsenceofbussupervisor"
+            android:exported="false" />
+        <activity
+            android:name=".bussupervisor"
+            android:exported="false" />
+        <activity
+            android:name=".thirdmessageforthestudents"
+            android:exported="false" />
+        <activity
+            android:name=".studentssmessagetwo"
+            android:exported="false" />
+        <activity
+            android:name=".studentsmessageone"
+            android:exported="false" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyBjNQMh36BUjMQFG5RRAN9CaBAKbvWobJM" />
+
+        <activity
+            android:name=".bustour"
+            android:exported="false"
+            android:label="@string/title_activity_bustour" />
+        <activity
+            android:name=".SettingsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".security"
+            android:exported="false" />
+        <activity
+            android:name=".mychild"
+            android:exported="false" />
+        <activity
+            android:name=".teacherssubjectsinfo"
+            android:exported="false" />
+        <activity
+            android:name=".feedbackandnotesofmanagers"
+            android:exported="false" />
+        <activity
+            android:name=".messagesofmanagers"
+            android:exported="false" />
+        <activity
+            android:name=".messagesofteachers"
+            android:exported="false" />
+        <activity
+            android:name=".attendanceandabsenceofteachers"
+            android:exported="false" />
+        <activity
+            android:name=".attendanceandabsenceofhelpers"
+            android:exported="false" />
+        <activity
+            android:name=".attendanceandabsenceofsecurity"
+            android:exported="false" />
+        <activity
+            android:name=".attendanceandabsenceofdrivers"
+            android:exported="false" />
+        <activity
+            android:name=".securityinformation"
+            android:exported="false" />
+        <activity
+            android:name=".helpersinformation"
+            android:exported="false" />
+        <activity
+            android:name=".driversinformation"
+            android:exported="false" />
+        <activity
+            android:name=".teacherinformationofstudents"
+            android:exported="false" />
+        <activity
+            android:name=".studentmychild"
+            android:exported="false" />
+        <activity
+            android:name=".academicinformation"
+            android:exported="false" />
+        <activity
+            android:name=".work"
+            android:exported="false" />
+        <activity
+            android:name=".attendancendabsenceofstudents"
+            android:exported="false" />
+        <activity
+            android:name=".teacherinformationforteachers"
+            android:exported="false" />
+        <activity
+            android:name=".welcomeepage"
+            android:exported="false" />
+        <activity
+            android:name=".dailymenu"
+            android:exported="false" />
+        <activity
+            android:name=".registrationandpayment"
+            android:exported="false" />
+        <activity
+            android:name=".messageofstudents"
+            android:exported="false" />
+        <activity
+            android:name=".studentinformationpage"
+            android:exported="false" />
+        <activity
+            android:name=".drivers"
+            android:exported="false" />
+        <activity
+            android:name=".helpers"
+            android:exported="false" />
+        <activity
+            android:name=".teachers2"
+            android:exported="false" />
+        <activity
+            android:name=".teachers"
+            android:exported="false" />
+        <activity
+            android:name=".managers"
+            android:exported="false" />
+        <activity
+            android:name=".students"
+            android:exported="false" />
+        <activity
+            android:name=".forgetpassword2"
+            android:exported="false" />
+        <activity
+            android:name=".forgetpassword1"
+            android:exported="false" />
+        <activity
+            android:name=".welcomepage"
+            android:exported="false" />
+        <activity
+            android:name=".page1"
+            android:exported="false" />
+        <activity
+            android:name=".signup"
+            android:exported="false" />
+        <activity
+            android:name=".login"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".welcomeepage"
+    android:onClick="welcome"
+    android:background="@drawable/busss">
+
+    <!--    <TextView-->
+<!--        android:id="@+id/welcome2"-->
+<!--        android:layout_width="196dp"-->
+<!--        android:layout_height="70dp"-->
+<!--        android:layout_marginTop="48dp"-->
+<!--        android:layout_marginEnd="36dp"-->
+<!--        android:fontFamily="@font/kiteone"-->
+<!--        android:text="Kinder Kingdom"-->
+<!--        android:textSize="26sp"-->
+<!--        android:textStyle="bold"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/textView7"-->
+<!--        android:layout_width="345dp"-->
+<!--        android:layout_height="155dp"-->
+<!--        android:layout_marginTop="560dp"-->
+<!--        android:layout_marginEnd="28dp"-->
+<!--        android:fontFamily="@font/kiteone"-->
+<!--        android:text="Kinder Kingdom is an Android application that simplifies kindergarten management by connecting parents, teachers, and managers. It replaces paperwork with a smart, organized platform that improves communication and saves time"-->
+<!--        android:textColor="@color/blue"-->
+<!--        android:textSize="16sp"-->
+<!--        android:textStyle="bold"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+
+    <TextView
+        android:id="@+id/welcome"
+        android:layout_width="286dp"
+        android:layout_height="104dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="108dp"
+        android:fontFamily="@font/kiteone"
+        android:gravity="center"
+        android:text="@string/WelcomeToKinderKingdom"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/settingView"
+        android:layout_width="20dp"
+        android:layout_height="19dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/settingicon" />
+
+    <ImageView
+        android:id="@+id/bellView"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="36dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/bellicon" />
+
+
+    <!--        <ImageView-->
+<!--            android:id="@+id/imageView21"-->
+<!--            android:layout_width="137dp"-->
+<!--            android:layout_height="144dp"-->
+<!--            android:layout_marginTop="364dp"-->
+<!--            android:layout_marginEnd="268dp"-->
+<!--            android:onClick="managements"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="parent"-->
+<!--            app:srcCompat="@drawable/managementc" />-->
+
+<!--        <ImageView-->
+<!--            android:id="@+id/imageView26"-->
+<!--            android:layout_width="168dp"-->
+<!--            android:layout_height="172dp"-->
+<!--            android:layout_marginTop="300dp"-->
+<!--            android:layout_marginEnd="120dp"-->
+<!--            android:onClick="employee"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="parent"-->
+<!--            app:srcCompat="@drawable/employeesc" />-->
+
+<!--        <ImageView-->
+<!--            android:id="@+id/imageView28"-->
+<!--            android:layout_width="148dp"-->
+<!--            android:layout_height="171dp"-->
+<!--            android:layout_marginTop="340dp"-->
+<!--            android:layout_marginEnd="16dp"-->
+<!--            android:onClick="studentss"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="parent"-->
+<!--            app:srcCompat="@drawable/studentsc" />-->
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

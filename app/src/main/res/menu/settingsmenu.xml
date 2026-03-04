@@ -1,0 +1,8 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <item android:id="@+id/menu_change_language" android:title="Change Language" />
+        <item android:id="@+id/menu_enable_voice" android:title="Enable Voice" />
+        <item android:id="@+id/menu_about" android:title="About" />
+        <item android:id="@+id/menu_contact" android:title="Contact" />
+
+</menu>

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "341278183482",
+    "project_id": "kinder-kingdom",
+    "storage_bucket": "kinder-kingdom.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:341278183482:android:b78e5f2f2de397cd782503",
+        "android_client_info": {
+          "package_name": "com.example.kinderkingdom"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCtEIbBKruE9H6qQiKPY4m-fz1WkePNKf8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

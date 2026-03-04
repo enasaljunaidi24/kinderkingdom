@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#FFFFFF"
+    tools:context=".interaction">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <!-- GridLayout للكروت -->
+    <GridLayout
+        android:layout_width="400dp"
+        android:layout_height="251dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:columnCount="1"
+        android:orientation="horizontal"
+        android:padding="0dp">
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_name"
+            android:layout_width="374dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:layout_margin="6dp"
+            android:background="@color/white"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="4dp">
+
+            <LinearLayout
+                android:layout_width="373dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="20dp">
+
+
+                <TextView
+                    android:id="@+id/interaction"
+                    android:layout_width="0dp"
+                    android:layout_height="200dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/kiteone"
+                    android:gravity="center"
+                    android:textColor="@color/blue"
+                    android:textSize="16sp" />
+
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+    </GridLayout>
+
+</FrameLayout>

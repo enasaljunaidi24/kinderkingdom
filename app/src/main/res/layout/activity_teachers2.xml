@@ -1,0 +1,404 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".teachers2"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/Teachers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="136dp"
+        android:fontFamily="@font/kiteone"
+        android:text="Teachers"
+        android:textColor="@color/blue"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/settingView"
+        android:layout_width="20dp"
+        android:layout_height="19dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/settingicon" />
+
+    <ImageView
+        android:id="@+id/bellView"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="36dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/bellicon" />
+
+    <ScrollView
+        android:layout_marginTop="80dp"
+        android:layout_width="409dp"
+        android:layout_height="672dp"
+        android:background="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="1"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <!-- 1️⃣ Information -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_information"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="6dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="4dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="76dp"
+                    android:gravity="center_vertical"
+                    android:onClick="teachersinformation"
+                    android:orientation="horizontal"
+                    android:padding="12dp">
+
+                    <ImageView
+                        android:layout_width="58dp"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="16dp"
+                        android:backgroundTint="#F4B400"
+                        android:src="@drawable/information2" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/kiteone"
+                        android:text="@string/MyInformation"
+                        android:textColor="@color/blue"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_marginStart="350dp"
+                    android:layout_marginTop="25dp"
+                    android:src="@drawable/arrowicon" />
+
+            </androidx.cardview.widget.CardView>
+
+
+            <!-- 2️⃣ Academic Information Of Students -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_academic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="6dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="4dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="76dp"
+                    android:gravity="center_vertical"
+                    android:onClick="academicnformation"
+                    android:orientation="horizontal"
+                    android:padding="12dp">
+
+                    <ImageView
+                        android:layout_width="81dp"
+                        android:layout_height="74dp"
+                        android:layout_marginEnd="16dp"
+                        android:backgroundTint="#F4B400"
+                        android:src="@drawable/acabutton2" />
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/kiteone"
+                        android:text="@string/AcademicInformationOfStudents"
+                        android:textColor="@color/blue"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_marginStart="350dp"
+                    android:layout_marginTop="30dp"
+                    android:src="@drawable/arrowicon" />
+            </androidx.cardview.widget.CardView>
+
+
+            <!-- 3️⃣ Attendance & Absences -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_attendance2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="6dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="4dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:onClick="attendanceandabsenceofteachers"
+                    android:orientation="horizontal"
+                    android:padding="12dp">
+
+                    <ImageView
+                        android:layout_width="66dp"
+                        android:layout_height="54dp"
+                        android:layout_marginStart="3dp"
+                        android:layout_marginEnd="16dp"
+                        android:backgroundTint="#F4B400"
+                        android:src="@drawable/attendanceandabsences2" />
+
+                    <TextView
+                        android:layout_width="183dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/kiteone"
+                        android:text="@string/AttendanceAbsences"
+                        android:textColor="@color/blue"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_marginStart="350dp"
+                    android:layout_marginTop="30dp"
+                    android:src="@drawable/arrowicon" />
+            </androidx.cardview.widget.CardView>
+
+            <!-- 4️⃣ Messages -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_messages"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="6dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="4dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="73dp"
+                    android:gravity="center_vertical"
+                    android:onClick="Messages"
+                    android:orientation="horizontal"
+                    android:padding="12dp">
+
+                    <ImageView
+                        android:layout_width="64dp"
+                        android:layout_height="82dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="16dp"
+                        android:backgroundTint="#F4B400"
+                        android:src="@drawable/messagebutton2" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/kiteone"
+                        android:text="@string/Messages"
+                        android:textColor="@color/blue"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_marginStart="350dp"
+                    android:layout_marginTop="30dp"
+                    android:src="@drawable/arrowicon" />
+            </androidx.cardview.widget.CardView>
+
+            <!-- 5️⃣ Bus Tours -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_bus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="6dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="4dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="77dp"
+                    android:gravity="center_vertical"
+                    android:onClick="bustour"
+                    android:orientation="horizontal"
+                    android:padding="12dp">
+
+                    <ImageView
+                        android:layout_width="82dp"
+                        android:layout_height="61dp"
+                        android:layout_marginEnd="16dp"
+                        android:backgroundTint="#F4B400"
+                        android:src="@drawable/busbutton2" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/kiteone"
+                        android:text="@string/BusTour"
+                        android:textColor="@color/blue"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_marginStart="350dp"
+                    android:layout_marginTop="30dp"
+                    android:src="@drawable/arrowicon" />
+            </androidx.cardview.widget.CardView>
+
+            <!-- 6️⃣ Feedback & Notes -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_feedback"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="6dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="4dp">
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="74dp"
+                    android:gravity="center_vertical"
+                    android:onClick="FeedbackandNotess"
+                    android:orientation="horizontal"
+                    android:padding="12dp">
+
+                    <ImageView
+                        android:layout_width="71dp"
+                        android:layout_height="62dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginEnd="16dp"
+                        android:backgroundTint="#F4B400"
+                        android:src="@drawable/feedbackbutton2" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/kiteone"
+                        android:text="@string/FeedbackNotes"
+                        android:textColor="@color/blue"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_marginStart="350dp"
+                    android:layout_marginTop="30dp"
+                    android:src="@drawable/arrowicon" />
+            </androidx.cardview.widget.CardView>
+
+            <!-- 7️⃣ Work -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_work"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="6dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="4dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="73dp"
+                    android:gravity="center_vertical"
+                    android:onClick="work"
+                    android:orientation="horizontal"
+                    android:padding="12dp">
+
+                    <ImageView
+                        android:layout_width="81dp"
+                        android:layout_height="54dp"
+                        android:layout_marginEnd="16dp"
+                        android:backgroundTint="#F4B400"
+                        android:src="@drawable/workbutton2" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/kiteone"
+                        android:text="@string/Work"
+                        android:textColor="@color/blue"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="22dp"
+                    android:layout_marginStart="350dp"
+                    android:layout_marginTop="30dp"
+                    android:src="@drawable/arrowicon" />
+            </androidx.cardview.widget.CardView>
+
+
+            <!-- 9️⃣ Daily Menu -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_menu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="6dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="4dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="72dp"
+                    android:gravity="center_vertical"
+                    android:onClick="dailymenuu"
+                    android:orientation="horizontal"
+                    android:padding="12dp">
+
+
+                    <ImageView
+                        android:layout_width="81dp"
+                        android:layout_height="76dp"
+                        android:layout_marginEnd="16dp"
+                        android:backgroundTint="#F4B400"
+                        android:onClick="dailymenuu"
+                        android:src="@drawable/menubutton2" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/kiteone"
+                        android:text="@string/DailyMenu"
+                        android:textColor="@color/blue"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_marginStart="350dp"
+                    android:layout_marginTop="25dp"
+                    android:src="@drawable/arrowicon" />
+            </androidx.cardview.widget.CardView>
+
+        </GridLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

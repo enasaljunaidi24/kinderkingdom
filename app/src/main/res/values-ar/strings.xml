@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">مملكة الأطفال</string>
+    <string name="mylist">جيد جداً</string>
+    <string name="hello_blank_fragment">مرحباً</string>
+    <string name="underlined_text"><u>نسيت كلمة المرور؟</u></string>
+    <string name="underlined_textl"><u>إنشاء حساب</u></string>
+    <string-array name="myarray">
+        <item>+962</item>
+        <item>+963</item>
+        <item>+970</item>
+        <item>+966</item>
+        <item>+971</item>
+    </string-array>
+
+    <string name="title_activity_gp">المعلم</string>
+
+    <!-- General -->
+    <string name="settings">الإعدادات</string>
+    <string name="change_language">تغيير اللغة</string>
+    <string name="enable_voice">تفعيل الصوت</string>
+
+    <!-- Example Titles -->
+    <string name="kinder">الاطفال</string>
+    <string name="Kingdom">مملكة</string>
+    <string name="ExamSchedule">جدول الامتحانات</string>
+    <string name="students">الطلاب</string>
+    <string name="Marks">العلامات</string>
+    <string name="Findyouraccount">ابحث عن حسابك</string>
+    <string name="Enteryourphonenumber">ادخل رقم هاتفك</string>
+    <string name="Phonenumber">رقم الهاتف</string>
+    <string name="Continue">يكمل</string>
+    <string name="Searchbyemailinstead">البحث عن طريق البريد الالكتروني بدلا من ذلك</string>
+    <string name="Enteryouremailaddress">ادخل ايميلك</string>
+    <string name="Searchbyphonenumberinstead"> ابحث عن طريق رقم الهاتف بدلا من ذلك </string>
+    <string name="KinderKingdomAllRightsReserved">جميع الحقوق الملكية محفوظه لمملكة الاطفال©2026</string>
+    <string name="WelcomeToKinderKingdom">مرحبا بك في مملكة الاطفال</string>
+    <string name="managers">الإداريون</string>
+    <string name="teachers">المعلمون</string>
+    <string name="drivers">السائقون</string>
+    <string name="helpers">المساعدون</string>
+    <string name="security">الأمن</string>
+<string name="ClassSchedule">جدول الحصص </string>
+    <string name="Homework">الواجبات</string>
+    <string name="Interaction">تفاعل</string>
+    <string name="BusTour">جولة الباص</string>
+    <string name="Messages">الرسائل</string>
+    <string name="personalinformation">المعلومات الشخصية</string>
+    <string name="FeedbackNotes">ملاحظات التغذية الراجعة</string>
+    <string name="MyPage">صفحتي</string>
+  <string name="AcademicInformation">المعلومات الاكاديمية</string>
+    <string name="StudentsInformation">معلومات الطالب</string>
+    <string name="TeachersInformation">معلومات المعلم</string>
+    <string name="AcademicInformationOfStudents">المعلومات الأكاديمية للطلاب</string>
+    <string name="DailyMenu">الوجبة اليومية</string>
+    <string name="RegistrationPayment">التسجيل والدفع</string>
+    <string name="MyInformation">معلوماتي</string>
+    <string name="AttendanceAbsences">الحضور والغياب</string>
+    <string name="Work">العمل</string>
+    <string name="Contracts">العقود</string>
+    <string name="Information">المعلومات</string>
+    <string name="MyChild">طفلي</string>
+    <string name="creating">نصنع مستقبلاً مشرقاً</string>
+
+    <!-- Auth -->
+    <string name="signup">إنشاء حساب</string>
+    <string name="login">تسجيل الدخول</string>
+    <string name="enteryouremail">أدخل بريدك الإلكتروني</string>
+    <string name="enteryourpassword">أدخل كلمة المرور</string>
+    <string name="enteryourphone">أدخل رقم هاتفك</string>
+    <string name="rememberme">تذكرني</string>
+    <string name="Donthaveanaccount">ليس لديك حساب؟</string>
+</resources>

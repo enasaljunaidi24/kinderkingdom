@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".examsschedule">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:background="#FFFFFF">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <!-- Page Title -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="📚 Exam Schedule 📚"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                android:textColor="#47779F"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="20dp"
+                android:shadowColor="#47779F"
+                android:shadowDx="2"
+                android:shadowDy="2"
+                android:fontFamily="@font/kiteone"
+                android:shadowRadius="2" />
+
+            <!-- Horizontal Scroll for Table -->
+            <HorizontalScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scrollbars="none">
+
+                <TableLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="1dp"
+                    android:background="#F2B705">
+
+                    <!-- Header Row -->
+                    <TableRow android:background="#F2B705">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Subject"
+                            android:padding="12dp"
+                            android:textColor="#FFFFFF"
+                            android:textStyle="bold"
+                            android:gravity="center"
+                            android:layout_margin="1dp"
+                            android:background="#D4A004"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Date"
+                            android:padding="12dp"
+                            android:textColor="#FFFFFF"
+                            android:textStyle="bold"
+                            android:gravity="center"
+                            android:layout_margin="1dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Time"
+                            android:padding="12dp"
+                            android:textColor="#FFFFFF"
+                            android:textStyle="bold"
+                            android:gravity="center"
+                            android:layout_margin="1dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Duration"
+                            android:padding="12dp"
+                            android:textColor="#FFFFFF"
+                            android:textStyle="bold"
+                            android:gravity="center"
+                            android:layout_margin="1dp"/>
+                    </TableRow>
+
+                    <!-- Exam Rows -->
+                    <TableRow android:background="#FFFFFF">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="1dp"
+                            android:gravity="center"
+                            android:padding="12dp"
+                            android:text="English"
+                            android:textColor="#A67C00" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="25/12/2026"
+                            android:padding="12dp"
+                            android:textColor="#47779F"
+                            android:gravity="center"
+                            android:layout_margin="1dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="09:00 AM"
+                            android:padding="12dp"
+                            android:textColor="#47779F"
+                            android:gravity="center"
+                            android:layout_margin="1dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="1h"
+                            android:padding="12dp"
+                            android:textColor="#47779F"
+                            android:gravity="center"
+                            android:layout_margin="1dp"/>
+                    </TableRow>
+
+                    <TableRow android:background="#FFFFFF">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Math"
+                            android:padding="12dp"
+                            android:textColor="#A67C00"
+                            android:gravity="center"
+                            android:layout_margin="1dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="26/12/2026"
+                            android:padding="12dp"
+                            android:textColor="#47779F"
+                            android:gravity="center"
+                            android:layout_margin="1dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="10:00 AM"
+                            android:padding="12dp"
+                            android:textColor="#47779F"
+                            android:gravity="center"
+                            android:layout_margin="1dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="1h 30m"
+                            android:padding="12dp"
+                            android:textColor="#47779F"
+                            android:gravity="center"
+                            android:layout_margin="1dp"/>
+                    </TableRow>
+
+                    <TableRow android:background="#FFFFFF">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Arabic"
+                            android:padding="12dp"
+                            android:textColor="#A67C00"
+                            android:gravity="center"
+                            android:layout_margin="1dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="27/12/2026"
+                            android:padding="12dp"
+                            android:textColor="#47779F"
+                            android:gravity="center"
+                            android:layout_margin="1dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="09:00 AM"
+                            android:padding="12dp"
+                            android:textColor="#47779F"
+                            android:gravity="center"
+                            android:layout_margin="1dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="1h"
+                            android:padding="12dp"
+                            android:textColor="#47779F"
+                            android:gravity="center"
+                            android:layout_margin="1dp"/>
+                    </TableRow>
+
+                    <TableRow android:background="#FFFFFF">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Science "
+                            android:padding="12dp"
+                            android:textColor="#A67C00"
+                            android:gravity="center"
+                            android:layout_margin="1dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="28/12/2026"
+                            android:padding="12dp"
+                            android:textColor="#47779F"
+                            android:gravity="center"
+                            android:layout_margin="1dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="10:00 AM"
+                            android:padding="12dp"
+                            android:textColor="#47779F"
+                            android:gravity="center"
+                            android:layout_margin="1dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="1h 30m"
+                            android:padding="12dp"
+                            android:textColor="#47779F"
+                            android:gravity="center"
+                            android:layout_margin="1dp"/>
+                    </TableRow>
+
+
+                    <TableRow android:background="#FFFFFF">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Islamic Ed."
+                            android:padding="12dp"
+                            android:textColor="#A67C00"
+                            android:gravity="center"
+                            android:layout_margin="1dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="29/12/2026"
+                            android:padding="12dp"
+                            android:textColor="#47779F"
+                            android:gravity="center"
+                            android:layout_margin="1dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="09:00 AM"
+                            android:padding="12dp"
+                            android:textColor="#47779F"
+                            android:gravity="center"
+                            android:layout_margin="1dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="1h"
+                            android:padding="12dp"
+                            android:textColor="#47779F"
+                            android:gravity="center"
+                            android:layout_margin="1dp"/>
+                    </TableRow>
+
+
+                </TableLayout>
+            </HorizontalScrollView>
+
+            <!-- Footer -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:text="Good Luck &amp; Study Well! ✨"
+                android:textColor="#F2B705"
+                android:textSize="14sp"
+                android:textStyle="italic" />
+
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

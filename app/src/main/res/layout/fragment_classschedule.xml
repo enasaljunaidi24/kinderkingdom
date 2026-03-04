@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".classschedule">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:background="#FFFFFF">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="20dp"
+                android:text="Class Schedule"
+                android:textColor="#47779F"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                android:shadowColor="#47779F"
+                android:shadowDx="2"
+                android:shadowDy="2"
+                android:fontFamily="@font/kiteone"
+                android:shadowRadius="2" />
+
+            <HorizontalScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scrollbars="none">
+
+                <TableLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#F2B705"
+                    android:padding="1.5dp">
+
+                    <!-- Table Header -->
+                    <TableRow android:background="#F2B705">
+                        <TextView android:text="Day / Period" android:padding="12dp" android:textColor="#FFFFFF" android:textStyle="bold" android:gravity="center" android:layout_margin="1dp" android:background="#D4A004" />
+                        <TextView android:text="1st" android:padding="12dp" android:textColor="#FFFFFF" android:textStyle="bold" android:gravity="center" android:layout_margin="1dp" />
+                        <TextView android:text="2nd" android:padding="12dp" android:textColor="#FFFFFF" android:textStyle="bold" android:gravity="center" android:layout_margin="1dp" />
+                        <TextView android:text="3rd" android:padding="12dp" android:textColor="#FFFFFF" android:textStyle="bold" android:gravity="center" android:layout_margin="1dp" />
+                        <TextView android:text="4th" android:padding="12dp" android:textColor="#FFFFFF" android:textStyle="bold" android:gravity="center" android:layout_margin="1dp" />
+                        <TextView android:text="5th" android:padding="12dp" android:textColor="#FFFFFF" android:textStyle="bold" android:gravity="center" android:layout_margin="1dp" />
+                        <TextView android:text="6th" android:padding="12dp" android:textColor="#FFFFFF" android:textStyle="bold" android:gravity="center" android:layout_margin="1dp" />
+                    </TableRow>
+
+                    <!-- Sunday -->
+                    <TableRow android:background="#FFFFFF">
+                        <TextView android:text="Sunday" android:padding="12dp" android:textStyle="bold" android:background="#FFF9E1" android:textColor="#A67C00" android:gravity="center" android:layout_margin="1dp" />
+                        <TextView android:text="English" android:padding="12dp" android:gravity="center" android:layout_margin="1dp" android:background="#FFFFFF" android:textColor="#47779F"/>
+                        <TextView android:text="Math" android:padding="12dp" android:gravity="center" android:layout_margin="1dp" android:background="#FFFFFF" android:textColor="#47779F"/>
+                        <TextView android:text="Arabic" android:padding="12dp" android:gravity="center" android:layout_margin="1dp" android:background="#FFFFFF" android:textColor="#47779F"/>
+                        <TextView android:text="Art" android:padding="12dp" android:gravity="center" android:layout_margin="1dp" android:background="#FFFFFF" android:textColor="#47779F"/>
+                        <TextView android:text="Islamic Ed." android:padding="12dp" android:gravity="center" android:layout_margin="1dp" android:background="#FFFFFF" android:textColor="#47779F"/>
+                        <TextView android:text="Science" android:padding="12dp" android:gravity="center" android:layout_margin="1dp" android:background="#FFFFFF" android:textColor="#47779F"/>
+                    </TableRow>
+
+                    <!-- Monday -->
+                    <TableRow android:background="#FFFFFF">
+                        <TextView android:text="Monday" android:padding="12dp" android:textStyle="bold" android:background="#FFF9E1" android:textColor="#A67C00" android:gravity="center" android:layout_margin="1dp" />
+                        <TextView android:text="Islamic Ed." android:padding="12dp" android:gravity="center" android:layout_margin="1dp" android:background="#FFFFFF" android:textColor="#47779F"/>
+                        <TextView android:text="English" android:padding="12dp" android:gravity="center" android:layout_margin="1dp" android:background="#FFFFFF" android:textColor="#47779F"/>
+                        <TextView android:text="Math" android:padding="12dp" android:gravity="center" android:layout_margin="1dp" android:background="#FFFFFF" android:textColor="#47779F"/>
+                        <TextView android:text="Story" android:padding="12dp" android:gravity="center" android:layout_margin="1dp" android:background="#FFFFFF" android:textColor="#47779F"/>
+                        <TextView android:text="Arabic" android:padding="12dp" android:gravity="center" android:layout_margin="1dp" android:background="#FFFFFF" android:textColor="#47779F"/>
+                        <TextView android:text="Play" android:padding="12dp" android:gravity="center" android:layout_margin="1dp" android:background="#FFFFFF" android:textColor="#47779F"/>
+                    </TableRow>
+
+                    <!-- Tuesday -->
+                    <TableRow android:background="#FFFFFF">
+                        <TextView android:text="Tuesday" android:padding="12dp" android:textStyle="bold" android:background="#FFF9E1" android:textColor="#A67C00" android:gravity="center" android:layout_margin="1dp" />
+                        <TextView android:text="Science" android:padding="12dp" android:gravity="center" android:layout_margin="1dp" android:background="#FFFFFF" android:textColor="#47779F"/>
+                        <TextView android:text="Arabic" android:padding="12dp" android:gravity="center" android:layout_margin="1dp" android:background="#FFFFFF" android:textColor="#47779F"/>
+                        <TextView android:text="English" android:padding="12dp" android:gravity="center" android:layout_margin="1dp" android:background="#FFFFFF" android:textColor="#47779F"/>
+                        <TextView android:text="Math" android:padding="12dp" android:gravity="center" android:layout_margin="1dp" android:background="#FFFFFF" android:textColor="#47779F"/>
+                        <TextView android:text="Games" android:padding="12dp" android:gravity="center" android:layout_margin="1dp" android:background="#FFFFFF" android:textColor="#47779F"/>
+                        <TextView android:text="Art" android:padding="12dp" android:gravity="center" android:layout_margin="1dp" android:background="#FFFFFF" android:textColor="#47779F"/>
+                    </TableRow>
+
+                    <!-- Wednesday -->
+                    <TableRow android:background="#FFFFFF">
+                        <TextView android:text="Wednesday" android:padding="12dp" android:textStyle="bold" android:background="#FFF9E1" android:textColor="#A67C00" android:gravity="center" android:layout_margin="1dp" />
+                        <TextView android:text="Math" android:padding="12dp" android:gravity="center" android:layout_margin="1dp" android:background="#FFFFFF" android:textColor="#47779F"/>
+                        <TextView android:text="Islamic Ed." android:padding="12dp" android:gravity="center" android:layout_margin="1dp" android:background="#FFFFFF" android:textColor="#47779F"/>
+                        <TextView android:text="English" android:padding="12dp" android:gravity="center" android:layout_margin="1dp" android:background="#FFFFFF" android:textColor="#47779F"/>
+                        <TextView android:text="Science" android:padding="12dp" android:gravity="center" android:layout_margin="1dp" android:background="#FFFFFF" android:textColor="#47779F"/>
+                        <TextView android:text="Arabic" android:padding="12dp" android:gravity="center" android:layout_margin="1dp" android:background="#FFFFFF" android:textColor="#47779F"/>
+                        <TextView android:text="Activity" android:padding="12dp" android:gravity="center" android:layout_margin="1dp" android:background="#FFFFFF" android:textColor="#47779F"/>
+                    </TableRow>
+
+                    <!-- Thursday -->
+                    <TableRow android:background="#FFFFFF">
+                        <TextView android:text="Thursday" android:padding="12dp" android:textStyle="bold" android:background="#FFF9E1" android:textColor="#A67C00" android:gravity="center" android:layout_margin="1dp" />
+                        <TextView android:text="English" android:padding="12dp" android:gravity="center" android:layout_margin="1dp" android:background="#FFFFFF" android:textColor="#47779F"/>
+                        <TextView android:text="Arabic" android:padding="12dp" android:gravity="center" android:layout_margin="1dp" android:background="#FFFFFF" android:textColor="#47779F"/>
+                        <TextView android:text="Math" android:padding="12dp" android:gravity="center" android:layout_margin="1dp" android:background="#FFFFFF" android:textColor="#47779F"/>
+                        <TextView android:text="Islamic Ed." android:padding="12dp" android:gravity="center" android:layout_margin="1dp" android:background="#FFFFFF" android:textColor="#47779F"/>
+                        <TextView android:text="Movie" android:padding="12dp" android:gravity="center" android:layout_margin="1dp" android:background="#FFFFFF" android:textColor="#47779F"/>
+                        <TextView android:text="  " android:padding="12dp" android:gravity="center" android:layout_margin="1dp" android:background="#FFFFFF" android:textColor="#47779F"/>
+                    </TableRow>
+
+                </TableLayout>
+            </HorizontalScrollView>
+
+
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

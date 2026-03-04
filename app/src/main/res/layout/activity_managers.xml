@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".managers"
+    android:background="@color/white">
+
+
+    <ScrollView
+        android:layout_width="420dp"
+        android:layout_height="678dp"
+        android:layout_marginTop="88dp"
+        android:padding="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:alignmentMode="alignMargins"
+            android:columnCount="2"
+            android:rowCount="2"
+            android:useDefaultMargins="true">
+
+            <!-- الكرت الأول -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="8dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="6dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="8dp"
+                    android:onClick="studentsbutton">
+
+                    <ImageView
+
+                        android:layout_width="166dp"
+                        android:layout_height="165dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/studentsbutton" />
+
+                    <TextView
+                        android:id="@+id/students"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/kiteone"
+                        android:gravity="center"
+                        android:paddingTop="4dp"
+                        android:text="@string/students"
+                        android:textSize="16dp"
+                        android:textColor="@color/blue"
+                        android:textStyle="bold" />
+
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- الكرت الثاني -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="8dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="6dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="8dp"
+                    android:onClick="teachersbutton">
+
+                    <ImageView
+
+                        android:layout_width="162dp"
+                        android:layout_height="165dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/teachersbutton" />
+
+
+                    <TextView
+                        android:id="@+id/Teachers"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/kiteone"
+                        android:gravity="center"
+                        android:paddingTop="6dp"
+                        android:text="@string/teachers"
+                        android:textColor="@color/blue"
+                        android:textSize="16dp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- الكرت الثالث -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="8dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="6dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="8dp"
+                    android:onClick="driversbutton">
+
+                    <ImageView
+
+                        android:layout_width="158dp"
+                        android:layout_height="164dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/driversbutton" />
+
+                    <TextView
+                        android:id="@+id/drivers"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:paddingTop="4dp"
+                        android:text="@string/drivers"
+                        android:textSize="16dp"
+                        android:textColor="@color/blue"
+                        android:fontFamily="@font/kiteone"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- الكرت الرابع -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="8dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="6dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="8dp"
+                    android:onClick="securitybutton">
+
+                    <ImageView
+
+                        android:layout_width="161dp"
+                        android:layout_height="160dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/securitybutton" />
+
+                    <TextView
+                        android:id="@+id/security"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:paddingTop="4dp"
+                        android:text="@string/security"
+                        android:textSize="16dp"
+                        android:textColor="@color/blue"
+                        android:fontFamily="@font/kiteone"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <!-- الكرت الخامس -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="8dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="6dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="8dp"
+                    android:onClick="helpersbutton">
+
+                    <ImageView
+
+                        android:layout_width="163dp"
+                        android:layout_height="156dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/helpersbutton" />
+
+                    <TextView
+                        android:id="@+id/helpers"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:paddingTop="4dp"
+                        android:text="@string/helpers"
+                        android:textSize="16dp"
+                        android:textColor="@color/blue"
+                        android:fontFamily="@font/kiteone"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <!-- الكرت السادس -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="8dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="6dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="8dp"
+                    android:onClick="bustour">
+
+                    <ImageView
+
+                        android:layout_marginTop="-7dp"
+                        android:layout_marginStart="-15dp"
+                        android:layout_width="180dp"
+                        android:layout_height="170dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/busbutton" />
+
+                    <TextView
+                        android:id="@+id/bustour"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:paddingTop="4dp"
+                        android:text="@string/BusTour"
+                        android:textSize="16dp"
+                        android:textColor="@color/blue"
+                        android:fontFamily="@font/kiteone"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <!-- الكرت السابع -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="8dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="6dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="8dp"
+                    android:onClick="messagebutton">
+
+                    <ImageView
+
+                        android:layout_width="166dp"
+                        android:layout_height="170dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/messagebutton" />
+
+                    <TextView
+                        android:id="@+id/messages"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:paddingTop="4dp"
+                        android:text="@string/Messages"
+                        android:textSize="16dp"
+                        android:textColor="@color/blue"
+                        android:fontFamily="@font/kiteone"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <!-- الكرت الثامن -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="8dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="6dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="8dp"
+                    android:onClick="feedbackandnotes">
+
+                    <ImageView
+
+                        android:layout_width="167dp"
+                        android:layout_height="165dp"
+                        android:layout_marginTop="6dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/feedbackbutton" />
+
+                    <TextView
+                        android:id="@+id/fedback"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:paddingTop="6dp"
+                        android:text="@string/FeedbackNotes"
+                        android:textSize="16dp"
+                        android:textColor="@color/blue"
+                        android:fontFamily="@font/kiteone"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+        </GridLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/managers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="136dp"
+        android:fontFamily="@font/kiteone"
+        android:text="@string/managers"
+        android:textColor="@color/blue"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/settingView"
+        android:layout_width="20dp"
+        android:layout_height="19dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/settingicon" />
+
+    <ImageView
+        android:id="@+id/bellView"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="36dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/bellicon" />
+</androidx.constraintlayout.widget.ConstraintLayout>

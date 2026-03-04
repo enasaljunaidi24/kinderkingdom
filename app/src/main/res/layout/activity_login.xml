@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".login">
+
+
+    <EditText
+        android:id="@+id/EnterEmailll"
+        android:layout_width="323dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="284dp"
+        android:layout_marginEnd="32dp"
+        android:backgroundTint="#80CCCCCC"
+        android:hint="@string/enteryouremail"
+        android:singleLine="true"
+        android:textSize="13sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/EnterPasswordll"
+        android:layout_width="330dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="368dp"
+        android:layout_marginEnd="28dp"
+        android:backgroundTint="#80CCCCCC"
+        android:hint="@string/enteryourpassword"
+        android:singleLine="true"
+        android:textSize="13sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <Button
+        android:id="@+id/LogIn"
+        android:layout_width="295dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="572dp"
+        android:layout_marginEnd="56dp"
+        android:backgroundTint="@color/orange"
+        android:text="@string/login"
+        android:fontFamily="@font/kiteone"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="19dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="308dp"
+        android:layout_marginEnd="328dp"
+        app:layout_constraintEnd_toEndOf="@+id/EnterEmailll"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/emailicon" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="24dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="384dp"
+        android:layout_marginEnd="328dp"
+        android:src="@drawable/passwordd"
+        app:layout_constraintEnd_toEndOf="@+id/EnterPasswordll"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/btn_star_big_on" />
+
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="216dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="512dp"
+        android:text="@string/Donthaveanaccount"
+        android:textColor="@color/blue"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="512dp"
+        android:layout_marginEnd="140dp"
+        android:onClick="SignUptext"
+        android:text="@string/underlined_textl"
+        android:textColor="@color/orange"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="OnClick" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="239dp"
+        android:layout_height="189dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="84dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/profile" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="91dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="136dp"
+        android:fontFamily="@font/kiteone"
+        android:text="@string/login"
+        android:textColor="@color/blue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
+    <ImageView
+        android:id="@+id/settingView"
+        android:layout_width="20dp"
+        android:layout_height="19dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/settingicon" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

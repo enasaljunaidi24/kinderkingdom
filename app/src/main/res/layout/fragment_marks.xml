@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".marks">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <!-- Header -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:orientation="vertical"
+                    android:gravity="center">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Kingdom of Jordan"
+                        android:textColor="#000000"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Ministry of Education"
+                        android:textColor="#000000"
+                        android:textSize="10sp"/>
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_centerInParent="true"
+                    android:src="@android:drawable/star_big_on" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:text="2026/ 2027"
+                    android:textColor="#F2B705"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <!-- Title -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:text="STUDENT PROGRESS REPORT"
+                android:textColor="#F2B705"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <!-- Student Info -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:background="#FFF9E1"
+                android:orientation="vertical"
+                android:padding="12dp">
+                <TextView
+                    android:id="@+id/nameTv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="4dp"
+                    android:text="Student Name: "
+                    android:textColor="#444444"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/classs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="4dp"
+                    android:textColor="#444444" />
+            </LinearLayout>
+
+            <!-- Grades Table -->
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#D4A004"
+                android:padding="1dp"
+                android:stretchColumns="1,2,3,4">
+
+                <!-- Header -->
+                <TableRow android:background="#F2B705">
+                    <TextView
+                        android:padding="10dp"
+                        android:gravity="start"
+                        android:text="Subject"
+                        android:textColor="#FFFFFF"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:padding="10dp"
+                        android:gravity="center"
+                        android:text="1st"
+                        android:textColor="#FFFFFF"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:padding="10dp"
+                        android:gravity="center"
+                        android:text="2nd"
+                        android:textColor="#FFFFFF"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:padding="10dp"
+                        android:gravity="center"
+                        android:text="3rd"
+                        android:textColor="#FFFFFF"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:padding="10dp"
+                        android:gravity="center"
+                        android:text="Avg."
+                        android:textColor="#FFFFFF"
+                        android:textStyle="bold"/>
+                </TableRow>
+
+                <!-- Islamic Ed. -->
+                <TableRow android:background="#FFFFFF">
+                    <TextView
+                        android:padding="10dp"
+                        android:gravity="start"
+                        android:background="#FFF9E1"
+                        android:text="Islamic Ed."
+                        android:textColor="#A67C00"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:id="@+id/islamic_month1"
+                        android:padding="10dp"
+                        android:gravity="center"
+                        android:textColor="#47779F"/>
+                    <TextView
+                        android:id="@+id/islamic_month2"
+                        android:padding="10dp"
+                        android:gravity="center"
+                        android:textColor="#47779F"/>
+                    <TextView
+                        android:id="@+id/islamic_month3"
+                        android:padding="10dp"
+                        android:gravity="center"
+                        android:textColor="#47779F"/>
+                    <TextView
+                        android:id="@+id/islamic_avg"
+                        android:padding="10dp"
+                        android:gravity="center"
+                        android:textColor="#47779F"/>
+                </TableRow>
+
+                <!-- Arabic -->
+                <TableRow android:background="#FFFFFF">
+                    <TextView
+                        android:padding="10dp"
+                        android:gravity="start"
+                        android:background="#FFF9E1"
+                        android:text="Arabic"
+                        android:textColor="#A67C00"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:id="@+id/arabic_month1"
+                        android:padding="10dp"
+                        android:gravity="center"
+                        android:textColor="#47779F"/>
+                    <TextView
+                        android:id="@+id/arabic_month2"
+                        android:padding="10dp"
+                        android:gravity="center"
+                        android:textColor="#47779F"/>
+                    <TextView
+                        android:id="@+id/arabic_month3"
+                        android:padding="10dp"
+                        android:gravity="center"
+                        android:textColor="#47779F"/>
+                    <TextView
+                        android:id="@+id/arabic_avg"
+                        android:padding="10dp"
+                        android:gravity="center"
+                        android:textColor="#47779F"/>
+                </TableRow>
+
+                <!-- English -->
+                <TableRow android:background="#FFFFFF">
+                    <TextView
+                        android:padding="10dp"
+                        android:gravity="start"
+                        android:background="#FFF9E1"
+                        android:text="English"
+                        android:textColor="#A67C00"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:id="@+id/english_month1"
+                        android:padding="10dp"
+                        android:gravity="center"
+                        android:textColor="#47779F"/>
+                    <TextView
+                        android:id="@+id/english_month2"
+                        android:padding="10dp"
+                        android:gravity="center"
+                        android:textColor="#47779F"/>
+                    <TextView
+                        android:id="@+id/english_month3"
+                        android:padding="10dp"
+                        android:gravity="center"
+                        android:textColor="#47779F"/>
+                    <TextView
+                        android:id="@+id/english_avg"
+                        android:padding="10dp"
+                        android:gravity="center"
+                        android:textColor="#47779F"/>
+                </TableRow>
+
+                <!-- Math -->
+                <TableRow android:background="#FFFFFF">
+                    <TextView
+                        android:padding="10dp"
+                        android:gravity="start"
+                        android:background="#FFF9E1"
+                        android:text="Math"
+                        android:textColor="#A67C00"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:id="@+id/math_month1"
+                        android:padding="10dp"
+                        android:gravity="center"
+                        android:textColor="#47779F"/>
+                    <TextView
+                        android:id="@+id/math_month2"
+                        android:padding="10dp"
+                        android:gravity="center"
+                        android:textColor="#47779F"/>
+                    <TextView
+                        android:id="@+id/math_month3"
+                        android:padding="10dp"
+                        android:gravity="center"
+                        android:textColor="#47779F"/>
+                    <TextView
+                        android:id="@+id/math_avg"
+                        android:padding="10dp"
+                        android:gravity="center"
+                        android:textColor="#47779F"/>
+                </TableRow>
+
+                <!-- Science -->
+                <TableRow android:background="#FFFFFF">
+                    <TextView
+                        android:padding="10dp"
+                        android:gravity="start"
+                        android:background="#FFF9E1"
+                        android:text="Science"
+                        android:textColor="#A67C00"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:id="@+id/science_month1"
+                        android:padding="10dp"
+                        android:gravity="center"
+                        android:textColor="#47779F"/>
+                    <TextView
+                        android:id="@+id/science_month2"
+                        android:padding="10dp"
+                        android:gravity="center"
+                        android:textColor="#47779F"/>
+                    <TextView
+                        android:id="@+id/science_month3"
+                        android:padding="10dp"
+                        android:gravity="center"
+                        android:textColor="#47779F"/>
+                    <TextView
+                        android:id="@+id/science_avg"
+                        android:padding="10dp"
+                        android:gravity="center"
+                        android:textColor="#47779F"/>
+                </TableRow>
+            </TableLayout>
+
+            <!-- Final Result -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:background="#F2B705"
+                android:gravity="center"
+                android:padding="15dp">
+                <TextView
+                    android:id="@+id/finalResultTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="FINAL RESULT: PASSED ✨"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/teacherTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="Class Teacher: "
+                android:textColor="#777777" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</FrameLayout>
