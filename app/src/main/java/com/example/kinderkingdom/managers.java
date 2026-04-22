@@ -46,7 +46,7 @@ public class managers extends AppCompatActivity {
         messages = findViewById(R.id.messages);
         fedback = findViewById(R.id.fedback);
         security = findViewById(R.id.security);
-        // ✅ المكان الصحيح لجلب القيم
+        //  المكان الصحيح لجلب القيم
         userId = getIntent().getStringExtra("userId");
         collection = getIntent().getStringExtra("collection");
 
